@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css">
-        <title>Hello World</title>
-    </head>
-    <body>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css">
+    <title>Hello World</title>
+</head>
+
+<body>
+    <section data-role="page" id="page-main">
+        <div data-role="header">
+            <h1>Page One</h1>
+            <a href="login.html" rel="external" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-user ui-btn-icon-notext">User</a>
+        </div>
         This is Page One.
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/jquery-1.12.2.js"></script>
-        <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
-    </body>
+        <div data-role="footer" style="overflow:hidden;" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="one.html" rel="external" class="ui-btn-active">One</a></li>
+                    <li><a href="two.html" rel="external">Two</a></li>
+                    <li><a href="three.html" rel="external">Three</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-1.12.2.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+</body>
+
 </html>

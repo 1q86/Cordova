@@ -7,41 +7,22 @@
 </head>
 
 <body>
-    <div data-role="page" id="page-login">
+    <section data-role="page" id="page-main">
         <div data-role="header">
-            <h1>User Login</h1>
-            <a href="#page-main" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-arrow-l">Back</a>
+            <h1>Page One</h1>
+            <a href="login.html" rel="external" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-user ui-btn-icon-notext">User</a>
         </div>
-        <div style="text-align:center">
-            <img src="img/logo.png" />
-        </div>
-        <from>
-            <label for="text-1">User Name:</label>
-            <input type="text" name="text-1" id="text-1" value="">
-            <label for="text-2">Password:</label>
-            <input type="password" name="text-2" id="text-2" value="">
-        </from>
-        <form>
-            <input type="checkbox" name="cb-keep" id="cb-keep" data-mini="true">
-            <label for="cb-keep">Keep Login</label>
-        </form>
-        <button class="ui-btn">Login</button>
-    </div>
-
-    <div data-role="page" id="page-main">
-        <div data-role="header">
-            <h1>Main Page</h1>
-        </div>
+        This is Page One.
         <div data-role="footer" style="overflow:hidden;" data-position="fixed">
             <div data-role="navbar">
                 <ul>
-                    <li><a href="one.html" class="ui-btn-active">One</a></li>
-                    <li><a href="two.html">Two</a></li>
-                    <li><a href="three.html">Three</a></li>
+                    <li><a href="one.html" rel="external" class="ui-btn-active">One</a></li>
+                    <li><a href="two.html" rel="external">Two</a></li>
+                    <li><a href="three.html" rel="external">Three</a></li>
                 </ul>
             </div>
         </div>
-    </div>
+    </section>
 
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/jquery-1.12.2.js"></script>
