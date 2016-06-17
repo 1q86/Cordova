@@ -4,7 +4,18 @@
 <head>
     <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css">
     <title>Hello World</title>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-1.12.2.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
 </head>
+<script>
+    alert(); 
+    $("#btn_getData").click(function(){
+        getData();
+    });
+    function getData(){ $.getJSON("api/address",function(result){ alert(result); }); }
+
+</script>
 
 <body>
     <section data-role="page" id="page-main">
@@ -13,9 +24,8 @@
             <a href="login.html" rel="external" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-user ui-btn-icon-notext">User</a>
         </div>
         <h2>This is Main Page.</h2>
-        <script>
-            alert();
-        </script>
+        <input type="button" id="btn_getData" value="Get Data" />
+
         <div data-role="footer" style="overflow:hidden;" data-position="fixed">
             <div data-role="navbar">
                 <ul>
@@ -27,9 +37,6 @@
         </div>
     </section>
 
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/jquery-1.12.2.js"></script>
-    <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
 </body>
 
 </html>
