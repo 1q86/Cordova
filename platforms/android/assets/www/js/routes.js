@@ -10,32 +10,32 @@ angular.module('app.routes', [])
     
   
 
-      .state('tabsController.cameraTabDefaultPage', {
+      .state('tabsController.page2', {
     url: '/page2',
     views: {
       'tab1': {
-        templateUrl: 'templates/cameraTabDefaultPage.html',
-        controller: 'cameraTabDefaultPageCtrl'
+        templateUrl: 'templates/page2.html',
+        controller: 'page2Ctrl'
       }
     }
   })
 
-  .state('tabsController.cartTabDefaultPage', {
+  .state('tabsController.page3', {
     url: '/page3',
     views: {
       'tab2': {
-        templateUrl: 'templates/cartTabDefaultPage.html',
-        controller: 'cartTabDefaultPageCtrl'
+        templateUrl: 'templates/page3.html',
+        controller: 'page3Ctrl'
       }
     }
   })
 
-  .state('tabsController.cloudTabDefaultPage', {
+  .state('tabsController.page4', {
     url: '/page4',
     views: {
       'tab3': {
-        templateUrl: 'templates/cloudTabDefaultPage.html',
-        controller: 'cloudTabDefaultPageCtrl'
+        templateUrl: 'templates/page4.html',
+        controller: 'page4Ctrl'
       }
     }
   })
@@ -46,7 +46,37 @@ angular.module('app.routes', [])
     abstract:true
   })
 
-$urlRouterProvider.otherwise('/page1/page2')
+  .state('login', {
+    url: '/page5',
+    templateUrl: 'templates/login.html',
+    controller: 'loginCtrl'
+  })
+
+  .state('signup', {
+    url: '/page6',
+    templateUrl: 'templates/signup.html',
+    controller: 'signupCtrl'
+  })
+
+  .state('userInfo', {
+    url: '/page7',
+    templateUrl: 'templates/userInfo.html',
+    controller: 'userInfoCtrl'
+  })
+
+  .state('about', {
+    url: '/page8',
+    templateUrl: 'templates/about.html',
+    controller: 'aboutCtrl'
+  })
+
+  .state('feedback', {
+    url: '/page9',
+    templateUrl: 'templates/feedback.html',
+    controller: 'feedbackCtrl'
+  })
+
+$urlRouterProvider.otherwise('/page5')
 
   
 

@@ -47,9 +47,9 @@
     <script src="js/services.js"></script>
     <script src="js/directives.js"></script>
 
-    <!-- Only required for Tab projects w/ pages in multiple tabs 
+    
     <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
-    -->
+    
 
   </head>
   <body ng-app="app" animation="slide-left-right-ios7">
@@ -69,18 +69,27 @@
                 <div class="title">Menu</div>
             </ion-header-bar>
             <ion-content padding="false" class="side-menu-left has-header">
+                <div class="spacer" data-componentid="spacer4" style="width: 0px; height: 0px;"></div>
                 <ion-list id="menu-list1" class=" " data-componentid="list1">
-                    <ion-item class="item-avatar  " id="menu-list-item3" data-componentid="list-item3">
-                        <h2>Item</h2>
+                    <ion-item class="item-thumbnail-left  " id="menu-list-item11" ui-sref="tabsController.mine" menu-close="" data-componentid="list-item11">
+                        <img src="img/7AF4pOW1Rsaho1AWibDy_u.jpg">
+                        <h2>呼啦</h2>
+                        <p>哈哈哈哈</p>
                     </ion-item>
-                    <ion-item class="item-avatar  " id="menu-list-item4" data-componentid="list-item4">
-                        <h2>Item</h2>
-                    </ion-item>
+                    <ion-item class="item-icon-left  " id="menu-list-item4" ui-sref="tabsController.home" menu-close="" data-componentid="list-item4">
+                        <i class="icon ion-android-home"></i>Home</ion-item>
+                    <ion-item class="item-icon-left  " id="menu-list-item147" ui-sref="tabsController.queryList" menu-close="" data-componentid="list-item147">
+                        <i class="icon ion-android-search"></i>Query</ion-item>
+                    <ion-item class="item-icon-left  " id="menu-list-item12" ui-sref="tabsController.publishList" menu-close="" data-componentid="list-item12">
+                        <i class="icon ion-android-add"></i>Publish</ion-item>
+                    <ion-item class="item-icon-left  " id="menu-list-item3" ui-sref="tabsController.mine" menu-close="" data-componentid="list-item3">
+                        <i class="icon ion-ios-heart"></i>Mine</ion-item>
                 </ion-list>
+                <div class="spacer" data-componentid="spacer13" style="width: 268px; height: 33px;"></div>
                 <ion-list id="menu-list2" class=" " data-componentid="list2">
-                    <ion-item id="menu-list-item5" class="  " data-componentid="list-item5">Item 1</ion-item>
-                    <ion-item id="menu-list-item6" class="  " data-componentid="list-item6">Item 2</ion-item>
-                    <ion-item id="menu-list-item7" class="  " data-componentid="list-item7">Item 3</ion-item>
+                    <ion-item id="menu-list-item5" ui-sref="systemSet" menu-close="" class="  " data-componentid="list-item5">System Set</ion-item>
+                    <ion-item id="menu-list-item13" href="mailto:" class="  " data-componentid="list-item13">Night Mode</ion-item>
+                    <ion-item id="menu-list-item6" ui-sref="shareApp" menu-close="" class="  " data-componentid="list-item6">Share APP</ion-item>
                 </ion-list>
             </ion-content>
         </ion-side-menu>
