@@ -47,9 +47,9 @@
     <script src="js/services.js"></script>
     <script src="js/directives.js"></script>
 
-    <!-- Only required for Tab projects w/ pages in multiple tabs 
+    
     <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
-    -->
+    
 
   </head>
   <body ng-app="app" animation="slide-left-right-ios7">
@@ -69,25 +69,27 @@
                 <div class="title">Menu</div>
             </ion-header-bar>
             <ion-content padding="false" class="side-menu-left has-header">
+                <div class="spacer" data-componentid="spacer4" style="width: 0px; height: 0px;"></div>
                 <ion-list id="menu-list1" class=" " data-componentid="list1">
-                    <ion-item class="item-thumbnail-left item-icon-right  " id="menu-list-item11" ui-sref="userInfo" menu-close="" data-componentid="list-item11">
+                    <ion-item class="item-thumbnail-left  " id="menu-list-item11" ui-sref="tabsController.mine" menu-close="" data-componentid="list-item11">
                         <img src="img/7AF4pOW1Rsaho1AWibDy_u.jpg">
                         <h2>呼啦</h2>
                         <p>哈哈哈哈</p>
-                        <i class="icon ion-android-person-add"></i>
                     </ion-item>
-                    <ion-item class="item-icon-left  " id="menu-list-item3" data-componentid="list-item3">
-                        <i class="icon ion-ios-heart"></i>我的题库</ion-item>
-                    <ion-item class="item-icon-left  " id="menu-list-item4" data-componentid="list-item4">
-                        <i class="icon ion-ios-keypad"></i>题型分类</ion-item>
-                    <ion-item class="item-icon-left  " id="menu-list-item12" data-componentid="list-item12">
-                        <i class="icon ion-ios-pricetags"></i>出版社</ion-item>
+                    <ion-item class="item-icon-left  " id="menu-list-item4" ui-sref="tabsController.home" menu-close="" data-componentid="list-item4">
+                        <i class="icon ion-android-home"></i>Home</ion-item>
+                    <ion-item class="item-icon-left  " id="menu-list-item147" ui-sref="tabsController.queryList" menu-close="" data-componentid="list-item147">
+                        <i class="icon ion-android-search"></i>Query</ion-item>
+                    <ion-item class="item-icon-left  " id="menu-list-item12" ui-sref="tabsController.publishList" menu-close="" data-componentid="list-item12">
+                        <i class="icon ion-android-add"></i>Publish</ion-item>
+                    <ion-item class="item-icon-left  " id="menu-list-item3" ui-sref="tabsController.mine" menu-close="" data-componentid="list-item3">
+                        <i class="icon ion-ios-heart"></i>Mine</ion-item>
                 </ion-list>
+                <div class="spacer" data-componentid="spacer13" style="width: 268px; height: 33px;"></div>
                 <ion-list id="menu-list2" class=" " data-componentid="list2">
-                    <ion-item id="menu-list-item5" ui-sref="feedback" menu-close="" class="  " data-componentid="list-item5">意见反馈</ion-item>
-                    <ion-item id="menu-list-item13" href="mailto:" class="  " data-componentid="list-item13">检查更新</ion-item>
-                    <ion-item id="menu-list-item6" class="  " data-componentid="list-item6">分享APP</ion-item>
-                    <ion-item id="menu-list-item7" ui-sref="about" menu-close="" class="  " data-componentid="list-item7">关于</ion-item>
+                    <ion-item id="menu-list-item5" ui-sref="systemSet" menu-close="" class="  " data-componentid="list-item5">System Set</ion-item>
+                    <ion-item id="menu-list-item13" href="mailto:" class="  " data-componentid="list-item13">Night Mode</ion-item>
+                    <ion-item id="menu-list-item6" ui-sref="shareApp" menu-close="" class="  " data-componentid="list-item6">Share APP</ion-item>
                 </ion-list>
             </ion-content>
         </ion-side-menu>
