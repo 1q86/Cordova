@@ -10,27 +10,10 @@ angular.module('app.routes', ['ionicUIRouter'])
     
   
 
-      /* 
-    The IonicUIRouter.js UI-Router Modification is being used for this route.
-    To navigate to this route, do NOT use a URL. Instead use one of the following:
-      1) Using the ui-sref HTML attribute:
-        ui-sref='tabsController.category'
-      2) Using $state.go programatically:
-        $state.go('tabsController.category');
-    This allows your app to figure out which Tab to open this page in on the fly.
-    If you're setting a Tabs default page or modifying the .otherwise for your app and
-    must use a URL, use one of the following:
-      /page1/tab5/Category
-      /page1/tab3/Category
-  */
-  .state('tabsController.category', {
+      .state('tabsController.category', {
     url: '/Category',
     views: {
       'tab5': {
-        templateUrl: 'templates/category.html',
-        controller: 'categoryCtrl'
-      },
-      'tab3': {
         templateUrl: 'templates/category.html',
         controller: 'categoryCtrl'
       }
@@ -63,34 +46,22 @@ angular.module('app.routes', ['ionicUIRouter'])
     abstract:true
   })
 
-  .state('tabsController.login', {
+  .state('login', {
     url: '/Login',
-    views: {
-      'tab3': {
-        templateUrl: 'templates/login.html',
-        controller: 'loginCtrl'
-      }
-    }
+    templateUrl: 'templates/login.html',
+    controller: 'loginCtrl'
   })
 
-  .state('tabsController.signUp', {
+  .state('signUp', {
     url: '/Sign Up',
-    views: {
-      'tab3': {
-        templateUrl: 'templates/signUp.html',
-        controller: 'signUpCtrl'
-      }
-    }
+    templateUrl: 'templates/signUp.html',
+    controller: 'signUpCtrl'
   })
 
-  .state('tabsController.userInfo', {
+  .state('userInfo', {
     url: '/User Info',
-    views: {
-      'tab3': {
-        templateUrl: 'templates/userInfo.html',
-        controller: 'userInfoCtrl'
-      }
-    }
+    templateUrl: 'templates/userInfo.html',
+    controller: 'userInfoCtrl'
   })
 
   .state('about', {
@@ -116,12 +87,17 @@ angular.module('app.routes', ['ionicUIRouter'])
     If you're setting a Tabs default page or modifying the .otherwise for your app and
     must use a URL, use one of the following:
       /page1/tab1/Author Result
+      /page1/tab5/Author Result
       /page1/tab3/Author Result
   */
   .state('tabsController.authorResult', {
     url: '/Author Result',
     views: {
       'tab1': {
+        templateUrl: 'templates/authorResult.html',
+        controller: 'authorResultCtrl'
+      },
+      'tab5': {
         templateUrl: 'templates/authorResult.html',
         controller: 'authorResultCtrl'
       },
@@ -143,12 +119,17 @@ angular.module('app.routes', ['ionicUIRouter'])
     If you're setting a Tabs default page or modifying the .otherwise for your app and
     must use a URL, use one of the following:
       /page1/tab1/Paper List
+      /page1/tab5/Paper List
       /page1/tab3/Paper List
   */
   .state('tabsController.paperList', {
     url: '/Paper List',
     views: {
       'tab1': {
+        templateUrl: 'templates/paperList.html',
+        controller: 'paperListCtrl'
+      },
+      'tab5': {
         templateUrl: 'templates/paperList.html',
         controller: 'paperListCtrl'
       },
@@ -170,12 +151,17 @@ angular.module('app.routes', ['ionicUIRouter'])
     If you're setting a Tabs default page or modifying the .otherwise for your app and
     must use a URL, use one of the following:
       /page1/tab1/Category Result
+      /page1/tab5/Category Result
       /page1/tab3/Category Result
   */
   .state('tabsController.categoryResult', {
     url: '/Category Result',
     views: {
       'tab1': {
+        templateUrl: 'templates/categoryResult.html',
+        controller: 'categoryResultCtrl'
+      },
+      'tab5': {
         templateUrl: 'templates/categoryResult.html',
         controller: 'categoryResultCtrl'
       },
@@ -197,12 +183,17 @@ angular.module('app.routes', ['ionicUIRouter'])
     If you're setting a Tabs default page or modifying the .otherwise for your app and
     must use a URL, use one of the following:
       /page1/tab1/Single Choice
+      /page1/tab5/Single Choice
       /page1/tab3/Single Choice
   */
   .state('tabsController.singleChoice', {
     url: '/Single Choice',
     views: {
       'tab1': {
+        templateUrl: 'templates/singleChoice.html',
+        controller: 'singleChoiceCtrl'
+      },
+      'tab5': {
         templateUrl: 'templates/singleChoice.html',
         controller: 'singleChoiceCtrl'
       },
@@ -271,7 +262,6 @@ angular.module('app.routes', ['ionicUIRouter'])
     must use a URL, use one of the following:
       /page1/tab1/Tag
       /page1/tab5/Tag
-      /page1/tab3/Tag
   */
   .state('tabsController.tag', {
     url: '/Tag',
@@ -281,10 +271,6 @@ angular.module('app.routes', ['ionicUIRouter'])
         controller: 'tagCtrl'
       },
       'tab5': {
-        templateUrl: 'templates/tag.html',
-        controller: 'tagCtrl'
-      },
-      'tab3': {
         templateUrl: 'templates/tag.html',
         controller: 'tagCtrl'
       }
@@ -335,7 +321,6 @@ angular.module('app.routes', ['ionicUIRouter'])
     must use a URL, use one of the following:
       /page1/tab1/Sub Category
       /page1/tab5/Sub Category
-      /page1/tab3/Sub Category
   */
   .state('tabsController.subCategory', {
     url: '/Sub Category',
@@ -345,10 +330,6 @@ angular.module('app.routes', ['ionicUIRouter'])
         controller: 'subCategoryCtrl'
       },
       'tab5': {
-        templateUrl: 'templates/subCategory.html',
-        controller: 'subCategoryCtrl'
-      },
-      'tab3': {
         templateUrl: 'templates/subCategory.html',
         controller: 'subCategoryCtrl'
       }
@@ -366,12 +347,17 @@ angular.module('app.routes', ['ionicUIRouter'])
     If you're setting a Tabs default page or modifying the .otherwise for your app and
     must use a URL, use one of the following:
       /page1/tab1/Result
+      /page1/tab5/Result
       /page1/tab3/Result
   */
   .state('tabsController.paperSet', {
     url: '/Result',
     views: {
       'tab1': {
+        templateUrl: 'templates/paperSet.html',
+        controller: 'paperSetCtrl'
+      },
+      'tab5': {
         templateUrl: 'templates/paperSet.html',
         controller: 'paperSetCtrl'
       },
@@ -393,12 +379,17 @@ angular.module('app.routes', ['ionicUIRouter'])
     If you're setting a Tabs default page or modifying the .otherwise for your app and
     must use a URL, use one of the following:
       /page1/tab1/Title List
+      /page1/tab5/Title List
       /page1/tab3/Title List
   */
   .state('tabsController.titleList', {
     url: '/Title List',
     views: {
       'tab1': {
+        templateUrl: 'templates/titleList.html',
+        controller: 'titleListCtrl'
+      },
+      'tab5': {
         templateUrl: 'templates/titleList.html',
         controller: 'titleListCtrl'
       },
@@ -420,12 +411,17 @@ angular.module('app.routes', ['ionicUIRouter'])
     If you're setting a Tabs default page or modifying the .otherwise for your app and
     must use a URL, use one of the following:
       /page1/tab1/Answer
+      /page1/tab5/Answer
       /page1/tab3/Answer
   */
   .state('tabsController.answer', {
     url: '/Answer',
     views: {
       'tab1': {
+        templateUrl: 'templates/answer.html',
+        controller: 'answerCtrl'
+      },
+      'tab5': {
         templateUrl: 'templates/answer.html',
         controller: 'answerCtrl'
       },
@@ -442,14 +438,10 @@ angular.module('app.routes', ['ionicUIRouter'])
     controller: 'shareAppCtrl'
   })
 
-  .state('tabsController.password', {
+  .state('password', {
     url: '/Password',
-    views: {
-      'tab3': {
-        templateUrl: 'templates/password.html',
-        controller: 'passwordCtrl'
-      }
-    }
+    templateUrl: 'templates/password.html',
+    controller: 'passwordCtrl'
   })
 
   /* 
@@ -463,12 +455,17 @@ angular.module('app.routes', ['ionicUIRouter'])
     If you're setting a Tabs default page or modifying the .otherwise for your app and
     must use a URL, use one of the following:
       /page1/tab1/Paper Share
+      /page1/tab5/Paper Share
       /page1/tab3/Paper Share
   */
   .state('tabsController.paperShare', {
     url: '/Paper Share',
     views: {
       'tab1': {
+        templateUrl: 'templates/paperShare.html',
+        controller: 'paperShareCtrl'
+      },
+      'tab5': {
         templateUrl: 'templates/paperShare.html',
         controller: 'paperShareCtrl'
       },
